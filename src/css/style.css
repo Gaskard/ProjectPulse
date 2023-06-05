@@ -10,7 +10,7 @@
 .promo {
   min-height: 650px;
   padding: 21px 0 93px 0;
-  background: url(../../img/bg/bggirl.jpg) center center/cover no-repeat;
+  background: url(../img/bg/bggirl.jpg) center center/cover no-repeat;
 }
 .promo__wrapper {
   display: -webkit-box;
@@ -146,6 +146,123 @@
   left: 1px;
   top: 2px;
   font-size: 16px;
+}
+
+.advantages {
+  min-height: 473px;
+  padding: 70px 0 65px 0;
+}
+.advantages__header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  color: #0D0D0D;
+}
+.advantages__header span {
+  text-align: center;
+}
+.advantages__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+}
+.advantages__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 749px;
+  min-height: 70px;
+}
+.advantages__icon {
+  margin-right: 68px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
+  min-width: 261px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.advantages__icon a {
+  font-weight: 300;
+  font-size: 14px;
+  color: #FF0000;
+}
+.advantages__icon img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+.advantages__descr {
+  margin-top: 26px;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  color: #0D0D0D;
+}
+
+@media all and (max-width: 767px) {
+  .header img {
+    margin-left: 26px;
+  }
+  .header__official {
+    display: none;
+  }
+  .header__contacts {
+    margin-right: 23px;
+  }
+
+  .promo__header {
+    display: block;
+    margin: 0 auto;
+  }
+  .promo__subheader {
+    display: block;
+    margin: 0 auto;
+  }
+  .promo__icons {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .promo__link {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .button {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .advantages__icons {
+    min-width: 576px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .advantages__descr {
+    width: 300px;
+  }
+  .advantages__icon {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
