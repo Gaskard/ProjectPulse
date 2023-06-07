@@ -69,7 +69,7 @@
 @media (max-width: 767px) {
     .header {
         img {
-            margin-left: 26px;
+            margin-left: 20px;
         }
         &__official {
             display: none;
@@ -128,12 +128,20 @@
 
 @media (max-width: 575px) {
     .header {
+        &__phone {
+            font-size: 13px;
+        }
         &__logo {
             width: 205px;
         }
     }
     .button {
         margin-top: 10px;
+        &_call {
+            font-size: 10px;
+            align-items: center;
+            width: 110px;
+        }
     }
     .promo {
         &__header {
@@ -142,8 +150,9 @@
         &__subheader {
             margin-left: 30px;
         }
-        &__icon {
-            margin-right: 15px;
+        &__icons {
+            justify-content: center;
+            width: 300px;
         }
     }
     .title {
