@@ -214,6 +214,14 @@
   font-weight: 700;
   font-size: 18px;
 }
+.advantages__icon_animated {
+  -webkit-animation: heartbeat 1.5s ease infinite;
+          animation: heartbeat 1.5s ease infinite;
+}
+.advantages__icon_animated:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
 .advantages__icon a {
   font-weight: 300;
   font-size: 14px;
@@ -639,6 +647,9 @@
 .footer__map {
   margin-top: 40px;
 }
+.footer iframe {
+  width: 100%;
+}
 
 .overlay {
   display: none;
@@ -697,6 +708,47 @@
   display: none;
 }
 
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+}
+.pageup img {
+  width: 100%;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale 1;
+            transform: scale 1;
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale 1;
+            transform: scale 1;
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 @media (max-width: 991px) {
   .promo {
     background-position: 25%;

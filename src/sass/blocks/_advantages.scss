@@ -31,6 +31,12 @@
         min-width: 261px;
         font-weight: 700;
         font-size: 18px;
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
         a {
             font-weight: 300;
             font-size: 14px;

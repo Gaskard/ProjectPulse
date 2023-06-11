@@ -85,10 +85,9 @@ $(document).ready(function(){
 
   $('form').submit(function(e) {
     e.preventDefault();
-
     if (!$(this).valid()) {
       return;
-    }
+    } 
 
     $.ajax({
       type: "POST",
@@ -96,12 +95,22 @@ $(document).ready(function(){
       data: $(this).serialize()
     }).done(function() {
       $(this).find("input").val("");
-
       $('#consultation, #order').fadeOut();
       $('.overlay, #thanks').fadeIn('slow');
 
-      $('form').trigger('reset')
+      $('form').trigger('reset');
     });
     return false;
   });
+
+  // Smooth scroll and pageup
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 1600) {
+        $('.pageup').fadeIn();
+    } else {
+      $('.pageup').fadeOut();
+    }
+  });
+
+  new WOW().init();
 });
